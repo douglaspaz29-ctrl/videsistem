@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDE — Sistemas Integrados de Crescimento Comercial & Engenharia Digital</title>
+  <meta name="description" content="Antes de buscar mais clientes, descubra quantas oportunidades você já está perdendo. Sistema de Crescimento em Loop, presença digital imersiva e resposta em menos de 20s.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='M6 6 L16 26 L26 6' stroke='%2300E5FF' stroke-width='3' fill='none'/></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- GSAP & Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- Film Grain Overlay (Exoape Clean Room Texture) -->
+  <canvas id="grain-canvas"></canvas>
+
+  <!-- Interactive Magnetic Cursor -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+
+  <!-- =========================================================================
+       SITE HEADER (Fixed Kinetic Navigation)
+       ========================================================================= -->
+  <header class="site-header">
+    <a href="index.html" class="brand-wrapper" data-cursor="VIDE">
+      <div class="brand-logo-icon">
+        <!-- Official VIDE Tree & Arrow Vector Emblem -->
+        <svg viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 8L20 32L32 8" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 14L32 8L34 16" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12" r="2.5" fill="#00E5FF"/>
+          <circle cx="15" cy="17" r="1.8" fill="#1A56FF"/>
+          <circle cx="25" cy="17" r="1.8" fill="#1A56FF"/>
+          <path d="M20 15V22" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="brand-title">VIDE<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="work.html" data-cursor="VER">Work</a></li>
+        <li><a href="studio.html" data-cursor="SOBRE">Studio</a></li>
+        <li><a href="news.html" data-cursor="LER">News</a></li>
+        <li><a href="contact.html" data-cursor="FALAR">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <div class="tech-badge">
+        <span class="dot"></span>
+        <span>Operação Ativa 24/7</span>
+      </div>
+      <a href="contact.html" class="btn-vide btn-outline" data-cursor="LIFT-OFF">
+        <span>Falar com Diretoria</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+      <button class="menu-toggle" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       HERO STAGE (Exact 1968px Scroll Runway Model with 250px Monumental Title)
+       ========================================================================= -->
+  <section class="hero-stage">
+    <div class="hero-meta-top">
+      <div class="hero-telemetry-badge">
+        <span>SISTEMA DE CRESCIMENTO EM LOOP</span>
+        <span style="color: var(--border-subtle);">/</span>
+        <span style="color: var(--text-bone);">ENG. COMERCIAL & DIGITAL</span>
+      </div>
+      <span class="mono-tag">[ TELEMETRIA 01.04 ]</span>
+    </div>
+
+    <!-- Monumental Display Title (Exoape 250px Scale Match) -->
+    <div class="hero-title-container">
+      <h1 class="hero-monumental-title">
+        <span class="row"><span>ENGENHARIA</span></span>
+        <span class="row"><span>DE PRECISÃO</span></span>
+        <span class="row"><span class="serif-italic" style="color: var(--cyan-primary);">& ESCALA DIGITAL.</span></span>
+      </h1>
+    </div>
+
+    <!-- Editorial Subtitle Block (Exact Exoape 530px Width Column) -->
+    <div class="hero-editorial-col">
+      <p class="hero-editorial-text">
+        Antes de buscar mais clientes, descubra quantas oportunidades você já está perdendo. Projetamos o ecossistema que une presença digital de autoridade máxima, atendimento ágil no WhatsApp em menos de 20 segundos e telemetria contínua para blindar oportunidades e maximizar faturamento.
+      </p>
+      <div class="hero-editorial-lead">
+        VIDE — SISTEMAS INTEGRADOS DE CRESCIMENTO COMERCIAL
+      </div>
+    </div>
+
+    <div class="hero-bottom-bar">
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Role para explorar a experiência</span>
+      </div>
+      <div class="mono-tag" style="color: rgba(255,255,255,0.4);">
+        EXOAPE ARCHITECTURE × VIDE IDENTITY
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FEATURED PROJECTS SECTION (Exact Exoape 2-per-row Staggered Asymmetry)
+       ========================================================================= -->
+  <section class="section-featured">
+    <div class="section-head">
+      <div>
+        <div class="section-number">01 / PILARES INTEGRADOS</div>
+        <h2 class="section-headline">Soluções em Ação.</h2>
+      </div>
+      <a href="work.html" class="btn-vide btn-outline" data-cursor="TODOS">
+        <span>Ver Todas as Soluções</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+    </div>
+
+    <!-- 2-Column Staggered Grid (Exact Exoape Composition) -->
+    <div class="staggered-grid">
+      
+      <!-- Card 1 (Elevated) -->
+      <article class="project-card" data-cursor="EXPLORAR">
+        <div class="card-image-box">
+          <div class="card-floating-badge">
+            <div class="tech-badge">
+              <span class="dot"></span>
+              <span>Pilar 01</span>
+            </div>
+          </div>
+          <img src="assets/vide_busto_cosmico.jpg" alt="Estratégia de Marketing e Presença Digital de Autoridade VIDE" loading="lazy">
+        </div>
+        <div class="card-meta-info">
+          <div>
+            <div class="card-category">Presença Digital & Autoridade</div>
+            <h3 class="card-title">Infraestrutura Visual & Supremacia de Marca</h3>
+            <p class="card-desc">
+              Desenvolvimento de sites de altíssimo padrão, com narrativa cinematográfica, fluidez sensorial e retenção de leads qualificados de alto valor.
+            </p>
+          </div>
+          <div class="card-action-arrow">↗</div>
+        </div>
+      </article>
+
+      <!-- Card 2 (Staggered Down - Asymmetric Offset) -->
+      <article class="project-card stagger-down" data-cursor="EXPLORAR">
+        <div class="card-image-box">
+          <div class="card-floating-badge">
+            <div class="tech-badge">
+              <span class="dot"></span>
+              <span>Pilar 02</span>
+            </div>
+          </div>
+          <img src="assets/vide_perfil_duplo.png" alt="Automação Comercial e Atendimento Ágil em menos de 20s" loading="lazy">
+        </div>
+        <div class="card-meta-info">
+          <div>
+            <div class="card-category">Automação Comercial & Loop</div>
+            <h3 class="card-title">Atendimento Instantâneo & Cluster de Agentes</h3>
+            <p class="card-desc">
+              Resposta em menos de 20 segundos no WhatsApp, qualificação imediata de compradores e integração contínua com seu CRM comercial.
+            </p>
+          </div>
+          <div class="card-action-arrow">↗</div>
+        </div>
+      </article>
+
+      <!-- Card 3 (Elevated) -->
+      <article class="project-card" data-cursor="EXPLORAR">
+        <div class="card-image-box">
+          <div class="card-floating-badge">
+            <div class="tech-badge">
+              <span class="dot"></span>
+              <span>Pilar 03</span>
+            </div>
+          </div>
+          <img src="assets/vide_androide_telemetria.jpg" alt="Inteligência Comercial e Telemetria de Dados VIDE" loading="lazy">
+        </div>
+        <div class="card-meta-info">
+          <div>
+            <div class="card-category">Telemetria & Inteligência</div>
+            <h3 class="card-title">Blindagem de Oportunidades & Análise Preditiva</h3>
+            <p class="card-desc">
+              Identificação exata de onde os leads são esquecidos ou perdidos, gerando aprendizado contínuo para aperfeiçoar cada fechamento.
+            </p>
+          </div>
+          <div class="card-action-arrow">↗</div>
+        </div>
+      </article>
+
+      <!-- Card 4 (Staggered Down) -->
+      <article class="project-card stagger-down" data-cursor="EXPLORAR">
+        <div class="card-image-box">
+          <div class="card-floating-badge">
+            <div class="tech-badge">
+              <span class="dot"></span>
+              <span>Pilar 04</span>
+            </div>
+          </div>
+          <img src="assets/vide_porcelana_fluida.png" alt="Estratégia de Marketing e Conteúdo de Conversão" loading="lazy">
+        </div>
+        <div class="card-meta-info">
+          <div>
+            <div class="card-category">Conteúdo & Captação</div>
+            <h3 class="card-title">Estratégia de Conteúdo & Conversão Imersiva</h3>
+            <p class="card-desc">
+              Comunicação orientada a vendas e construção de posicionamento institucional incontestável no mercado de atuação.
+            </p>
+          </div>
+          <div class="card-action-arrow">↗</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       WORK IN MOTION — O CLUSTER DOS 7 AGENTES (Interactive Showcase)
+       ========================================================================= -->
+  <section class="section-motion">
+    <div class="motion-showcase-container">
+      
+      <!-- Visual Display with Dynamic Switch -->
+      <div class="motion-visual-wrapper">
+        <img id="motion-featured-img" src="assets/vide_busto_cosmico.jpg" alt="O Núcleo de Inteligência e Automação VIDE">
+        <div class="motion-visual-overlay"></div>
+      </div>
+
+      <!-- Content & Interactive Cluster List -->
+      <div class="motion-content">
+        <div class="mono-tag" style="margin-bottom: 16px;">O NÚCLEO DE INTELIGÊNCIA DA VIDE</div>
+        <h2 class="motion-headline" id="motion-agent-title">Cluster dos 7 Agentes Especialistas</h2>
+        <p class="motion-copy" id="motion-agent-desc">
+          Uma equipe de agentes autônomos e integrados operando 24 horas por dia, 7 dias por semana. Cada agente domina uma etapa crítica do seu funil comercial, desde o primeiro toque até a recuperação de vendas esquecidas.
+        </p>
+
+        <!-- Interactive Switcher -->
+        <div class="agents-cluster-list">
+          <div class="agent-item active" 
+               data-name="Agente 01 — Triagem & Recepção Relâmpago" 
+               data-role="Recepção" 
+               data-desc="Responde aos leads em menos de 20 segundos no WhatsApp, qualifica a intenção e encaminha sem ruídos."
+               data-img="assets/vide_busto_cosmico.jpg"
+               data-metric="Tempo médio: 14s">
+            <div class="agent-info">
+              <span class="agent-index">01</span>
+              <span class="agent-name">Triagem & Recepção Relâmpago</span>
+            </div>
+            <span class="agent-status">Ativo 24/7</span>
+          </div>
+
+          <div class="agent-item" 
+               data-name="Agente 02 — Qualificador de Oportunidades" 
+               data-role="Qualificação" 
+               data-desc="Filtra orçamento, urgência e perfil de compra para entregar apenas leads prontos para fechar aos executivos."
+               data-img="assets/vide_perfil_duplo.png"
+               data-metric="Acurácia: 99.4%">
+            <div class="agent-info">
+              <span class="agent-index">02</span>
+              <span class="agent-name">Qualificador de Oportunidades</span>
+            </div>
+            <span class="agent-status">Ativo 24/7</span>
+          </div>
+
+          <div class="agent-item" 
+               data-name="Agente 03 — Blindagem de Follow-up" 
+               data-role="Recuperação" 
+               data-desc="Monitora contatos sem resposta e executa cadências personalizadas que recuperam até 62% das perdas."
+               data-img="assets/vide_androide_telemetria.jpg"
+               data-metric="Recuperação: +62%">
+            <div class="agent-info">
+              <span class="agent-index">03</span>
+              <span class="agent-name">Blindagem de Follow-up</span>
+            </div>
+            <span class="agent-status">Ativo 24/7</span>
+          </div>
+
+          <div class="agent-item" 
+               data-name="Agente 04 — Telemetria de Conversão" 
+               data-role="Dados" 
+               data-desc="Audita o funil continuamente, identifica gargalos de atendimento e prevê tendências de receita."
+               data-img="assets/vide_porcelana_fluida.png"
+               data-metric="Monitoramento: 100%">
+            <div class="agent-info">
+              <span class="agent-index">04</span>
+              <span class="agent-name">Telemetria de Conversão</span>
+            </div>
+            <span class="agent-status">Ativo 24/7</span>
+          </div>
+        </div>
+
+        <div>
+          <a href="contact.html" class="btn-vide btn-cyan" data-cursor="LIFT-OFF">
+            <span>Ativar o Cluster na Sua Operação</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SWISS BRUTALIST TELEMETRY & METRICS (Inspired by Mariana Napolitani Poster)
+       ========================================================================= -->
+  <section class="section-telemetry">
+    <div class="section-head">
+      <div>
+        <div class="section-number">02 / INDICADORES DE IMPACTO</div>
+        <h2 class="section-headline">Métricas de Precisão.</h2>
+      </div>
+      <div class="mono-tag">[ TELEMETRIA EM TEMPO REAL ]</div>
+    </div>
+
+    <div class="telemetry-grid">
+      <div class="telemetry-card" data-cursor="METRICA">
+        <div>
+          <div class="metric-label">Velocidade de Resposta</div>
+          <div class="metric-val cyan">&lt; 20s</div>
+        </div>
+        <p class="metric-sub">
+          Atendimento humanizado instantâneo via WhatsApp para eliminar a evasão de leads e capturar o comprador no calor da intenção.
+        </p>
+      </div>
+
+      <div class="telemetry-card" data-cursor="METRICA">
+        <div>
+          <div class="metric-label">Recuperação de Negócios</div>
+          <div class="metric-val lime">+62%</div>
+        </div>
+        <p class="metric-sub">
+          Oportunidades esquecidas em orçamentos sem resposta resgatadas pelo sistema de cadência automatizada em loop.
+        </p>
+      </div>
+
+      <div class="telemetry-card" data-cursor="METRICA">
+        <div>
+          <div class="metric-label">Cobertura da Operação</div>
+          <div class="metric-val">24/7</div>
+        </div>
+        <p class="metric-sub">
+          Sem pausas, finais de semana ou feriados. Seu ecossistema comercial opera gerando receita e agendamentos ininterruptamente.
+        </p>
+      </div>
+
+      <div class="telemetry-card" data-cursor="METRICA">
+        <div>
+          <div class="metric-label">Rastreabilidade Total</div>
+          <div class="metric-val cyan">100%</div>
+        </div>
+        <p class="metric-sub">
+          Visão raio-X de cada centavo investido em tráfego e do retorno gerado em cada atendimento até o fechamento.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TICKER FLOW BANNER (Exact Exoape Continuous Motion)
+       ========================================================================= -->
+  <div class="ticker-band">
+    <div class="ticker-track">
+      <span class="ticker-text">VIDE · SISTEMA DE CRESCIMENTO EM LOOP <span>↗</span></span>
+      <span class="ticker-text">BLINDAGEM COMERCIAL CONTÍNUA <span>↗</span></span>
+      <span class="ticker-text">RESPOSTA EM MENOS DE 20 SEGUNDOS <span>↗</span></span>
+      <span class="ticker-text">PRESENÇA DIGITAL DE ALTA AUTORIDADE <span>↗</span></span>
+      <span class="ticker-text">VIDE · SISTEMA DE CRESCIMENTO EM LOOP <span>↗</span></span>
+      <span class="ticker-text">BLINDAGEM COMERCIAL CONTÍNUA <span>↗</span></span>
+      <span class="ticker-text">RESPOSTA EM MENOS DE 20 SEGUNDOS <span>↗</span></span>
+      <span class="ticker-text">PRESENÇA DIGITAL DE ALTA AUTORIDADE <span>↗</span></span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FOOTER CARBON (Exact Exoape Carbon #070707 Structure)
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="footer-top-cta">
+      <div class="footer-lead">PRONTO PARA TRANSFORMAR SUA OPERAÇÃO?</div>
+      <div class="footer-colossal-title">
+        <a href="contact.html" data-cursor="LIFT-OFF">
+          Descubra quanto você está perdendo. <span style="color: var(--cyan-primary);">Vamos conversar ↗</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand-wrapper" style="margin-bottom: 20px;">
+          <span class="brand-title" style="font-size: 24px;">VIDE<span class="brand-dot">.</span></span>
+        </div>
+        <p style="font-size: 15px; color: var(--text-muted); max-width: 320px; line-height: 1.6;">
+          Engenharia de precisão para operações comerciais e escala digital. O sistema integrado que une autoridade, automação e inteligência em loop.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Soluções</h4>
+        <ul>
+          <li><a href="work.html">Presença Digital</a></li>
+          <li><a href="work.html">Automação Comercial</a></li>
+          <li><a href="work.html">Cluster dos 7 Agentes</a></li>
+          <li><a href="work.html">Telemetria de Vendas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Diretoria Executiva</h4>
+        <ul>
+          <li><span style="color: #FFFFFF; font-weight: 600;">Douglas</span> — Diretor Executivo</li>
+          <li><a href="mailto:contato@vide.com.br">contato@vide.com.br</a></li>
+          <li><a href="https://wa.me/5500000000000" target="_blank" style="color: var(--cyan-primary);">Canal Prioritário WhatsApp ↗</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span>© 2026 VIDE. Todos os direitos reservados.</span>
+      <span class="mono-tag" style="color: var(--text-dim);">EXOAPE RECONSTRUCTION × REBUILD FOR VIDE</span>
+    </div>
+  </footer>
+
+  <!-- Main Interaction Engine -->
+  <script src="js/main.js"></script>
+</body>
+</html>

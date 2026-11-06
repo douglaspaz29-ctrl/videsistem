@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDE — Contact & Iniciação Operacional (Lift-Off)</title>
+  <meta name="description" content="Inicie a transformação comercial da sua empresa. Ative o Sistema de Crescimento em Loop da VIDE com resposta em menos de 20 segundos.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <canvas id="grain-canvas"></canvas>
+  <div id="custom-cursor" class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-wrapper" data-cursor="HOME">
+      <div class="brand-logo-icon">
+        <svg viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 8L20 32L32 8" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 14L32 8L34 16" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12" r="2.5" fill="#00E5FF"/>
+          <path d="M20 15V22" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="brand-title">VIDE<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="work.html" data-cursor="WORK">Work</a></li>
+        <li><a href="studio.html" data-cursor="STUDIO">Studio</a></li>
+        <li><a href="news.html" data-cursor="LER">News</a></li>
+        <li><a href="contact.html" class="active" data-cursor="CONTACT">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <div class="tech-badge">
+        <span class="dot"></span>
+        <span>Recepção Ativa</span>
+      </div>
+      <a href="contact.html" class="btn-vide btn-outline" data-cursor="LIFT-OFF">
+        <span>Falar com Diretoria</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main style="padding-top: 180px; padding-bottom: 120px;">
+    
+    <!-- Title Section -->
+    <div style="padding-left: var(--gutter-desktop); padding-right: var(--gutter-desktop); margin-bottom: 80px;">
+      <div class="mono-tag" style="margin-bottom: 24px;">PRONTO PARA A ESCALA COMERCIAL</div>
+      <h1 style="font-size: var(--text-h1); line-height: 0.92; letter-spacing: -0.04em; margin-bottom: 32px;">
+        Ready for <span class="serif-italic" style="color: var(--cyan-primary);">lift-off?</span>
+      </h1>
+      <p style="font-size: 22px; line-height: 1.5; color: var(--text-muted); max-width: 640px;">
+        Entre em contato direto pelo canal prioritário do WhatsApp ou envie as informações da sua empresa para ativarmos seu diagnóstico em menos de 20 segundos.
+      </p>
+    </div>
+
+    <!-- Infinite Multilingual Ticker (Exact Exoape Contact Feature) -->
+    <div class="ticker-band" style="margin-bottom: 100px;">
+      <div class="ticker-track">
+        <span class="ticker-text">GET IN TOUCH · INICIAR OPERAÇÃO · PONERSE EN CONTACTO · NEEM CONTACT OP · 保持联系 · <span>↗</span></span>
+        <span class="ticker-text">GET IN TOUCH · INICIAR OPERAÇÃO · PONERSE EN CONTACTO · NEEM CONTACT OP · 保持联系 · <span>↗</span></span>
+      </div>
+    </div>
+
+    <!-- Contact Grid & Direct WhatsApp Activation -->
+    <div style="padding-left: var(--gutter-desktop); padding-right: var(--gutter-desktop); display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+      
+      <!-- Left: Coordinates -->
+      <div>
+        <div class="mono-tag" style="margin-bottom: 16px;">CANAL DIRETO COM DIRETORIA EXECUTIVA</div>
+        <h2 style="font-size: 36px; line-height: 1.1; margin-bottom: 24px; color: #FFFFFF;">
+          Douglas — Diretor Executivo da VIDE
+        </h2>
+        <p style="font-size: 16px; color: var(--text-muted); line-height: 1.6; margin-bottom: 40px; max-width: 480px;">
+          Cada implementação comercial é liderada diretamente por nossa diretoria de tecnologia e estratégia comercial, garantindo resposta imediata e conformidade técnica total.
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <a href="https://wa.me/5500000000000" target="_blank" class="btn-vide btn-cyan" style="width: fit-content; padding: 20px 36px; font-size: 16px;" data-cursor="WHATSAPP">
+            <span>Conversar no WhatsApp em &lt; 20s</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+
+          <a href="mailto:contato@vide.com.br" class="btn-vide btn-outline" style="width: fit-content;" data-cursor="EMAIL">
+            <span>contato@vide.com.br</span>
+            <span class="btn-arrow">↗</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Diagnostic Form -->
+      <div style="padding: 48px; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md);">
+        <div class="mono-tag" style="margin-bottom: 20px;">SOLICITAR AUDITORIA PRELIMINAR</div>
+        <form onsubmit="event.preventDefault(); alert('Solicitação enviada com sucesso! Nossa diretoria executiva retornará em instantes.');">
+          <div style="margin-bottom: 24px;">
+            <label style="display: block; font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">SEU NOME / CARGO</label>
+            <input type="text" placeholder="Ex: Diretor Comercial" required style="width: 100%; padding: 16px; background: rgba(7,7,9,0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #FFFFFF; font-size: 15px; outline: none;">
+          </div>
+
+          <div style="margin-bottom: 24px;">
+            <label style="display: block; font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">WHATSAPP CORPORATIVO</label>
+            <input type="tel" placeholder="(11) 99999-9999" required style="width: 100%; padding: 16px; background: rgba(7,7,9,0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #FFFFFF; font-size: 15px; outline: none;">
+          </div>
+
+          <div style="margin-bottom: 32px;">
+            <label style="display: block; font-family: var(--font-mono); font-size: 12px; color: var(--text-muted); margin-bottom: 8px;">VOLUME APROXIMADO DE LEADS / MÊS</label>
+            <input type="text" placeholder="Ex: 50 a 500 leads/mês" style="width: 100%; padding: 16px; background: rgba(7,7,9,0.8); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); color: #FFFFFF; font-size: 15px; outline: none;">
+          </div>
+
+          <button type="submit" class="btn-vide btn-cyan" style="width: 100%; padding: 18px;" data-cursor="ENVIAR">
+            <span>Enviar Solicitação de Diagnóstico</span>
+            <span class="btn-arrow">↗</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand-wrapper" style="margin-bottom: 20px;">
+          <span class="brand-title" style="font-size: 24px;">VIDE<span class="brand-dot">.</span></span>
+        </div>
+        <p style="font-size: 15px; color: var(--text-muted); line-height: 1.6;">
+          Engenharia de precisão para operações comerciais e escala digital.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Diretoria</h4>
+        <ul>
+          <li><span style="color: #FFFFFF;">Douglas</span> — Diretor Executivo</li>
+          <li><a href="mailto:contato@vide.com.br">contato@vide.com.br</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ação Imediata</h4>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn-vide btn-cyan" style="width: 100%;">WhatsApp Direto ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <span>© 2026 VIDE. Todos os direitos reservados.</span>
+      <span class="mono-tag">EXOAPE HIGH-FIDELITY BUILD</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

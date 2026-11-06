@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIDE — Studio & Manifesto do Loop Contínuo</title>
+  <meta name="description" content="Conheça a filosofia, a metodologia e a engenharia por trás da VIDE. O Sistema de Crescimento em Loop para blindagem de faturamento.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <canvas id="grain-canvas"></canvas>
+  <div id="custom-cursor" class="custom-cursor"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <a href="index.html" class="brand-wrapper" data-cursor="HOME">
+      <div class="brand-logo-icon">
+        <svg viewBox="0 0 40 40" width="36" height="36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 8L20 32L32 8" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M26 14L32 8L34 16" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="20" cy="12" r="2.5" fill="#00E5FF"/>
+          <path d="M20 15V22" stroke="#00E5FF" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <span class="brand-title">VIDE<span class="brand-dot">.</span></span>
+    </a>
+
+    <nav>
+      <ul class="nav-links">
+        <li><a href="work.html" data-cursor="WORK">Work</a></li>
+        <li><a href="studio.html" class="active" data-cursor="STUDIO">Studio</a></li>
+        <li><a href="news.html" data-cursor="LER">News</a></li>
+        <li><a href="contact.html" data-cursor="FALAR">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <div class="tech-badge">
+        <span class="dot"></span>
+        <span>Metodologia em Loop</span>
+      </div>
+      <a href="contact.html" class="btn-vide btn-outline" data-cursor="LIFT-OFF">
+        <span>Falar com Diretoria</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Studio Hero (144px Monumental Heading Match) -->
+  <main style="padding-top: 180px;">
+    
+    <div style="padding-left: var(--gutter-desktop); padding-right: var(--gutter-desktop); margin-bottom: 140px;">
+      <div class="mono-tag" style="margin-bottom: 24px;">MANIFESTO & FILOSOFIA DE OPERAÇÃO</div>
+      <h1 style="font-size: var(--text-h1); line-height: 0.92; letter-spacing: -0.04em; max-width: 1200px; margin-bottom: 48px;">
+        Arquitetura de <span class="serif-italic" style="color: var(--cyan-primary);">Crescimento</span> em Loop Contínuo.
+      </h1>
+
+      <div style="max-width: 680px; margin-left: clamp(0px, 8vw, 120px);">
+        <p style="font-size: 22px; line-height: 1.5; color: rgba(255,255,255,0.85); font-weight: 300; margin-bottom: 30px;">
+          Empresas consolidadas não precisam de truques de marketing efêmeros. Projetamos a fusão perfeita entre autoridade institucional inegociável, atendimento com velocidade quântica e aprendizado contínuo sobre cada oportunidade atendida.
+        </p>
+        <div class="mono-tag" style="color: var(--text-bone);">
+          TESE: ANTES DE BUSCAR MAIS CLIENTES, DESCUBRA QUANTAS OPORTUNIDADES VOCÊ JÁ ESTÁ PERDENDO.
+        </div>
+      </div>
+    </div>
+
+    <!-- Alternating Light Section (Exact Exoape #F8F8F8 Gallery Rhythm Match) -->
+    <section class="light-gallery-section">
+      <div style="display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 80px; padding-bottom: 30px; border-bottom: 1px solid var(--border-dark);">
+        <div>
+          <div class="mono-tag" style="color: var(--blue-tech); margin-bottom: 12px;">O MÉTODO DO LOOP</div>
+          <h2 style="font-size: var(--text-h2); line-height: 1.0; letter-spacing: -0.03em;">
+            Quatro Estágios de Blindagem.
+          </h2>
+        </div>
+        <div class="tech-badge">
+          <span class="dot" style="background: var(--blue-tech); box-shadow: 0 0 8px var(--blue-tech);"></span>
+          <span>Sincronia Operacional</span>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+        <div style="padding: 32px; background: #FFFFFF; border: 1px solid var(--border-dark); border-radius: var(--radius-md);">
+          <div style="font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--blue-tech); margin-bottom: 16px;">01</div>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Diagnóstico de Fugas</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #555968;">Mapeamos exatamente em quais etapas do funil seus leads esfriam ou são esquecidos pelos vendedores.</p>
+        </div>
+
+        <div style="padding: 32px; background: #FFFFFF; border: 1px solid var(--border-dark); border-radius: var(--radius-md);">
+          <div style="font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--blue-tech); margin-bottom: 16px;">02</div>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Presença & Autoridade</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #555968;">Construímos a vitrine digital que eleva o valor percebido do seu produto e ancora preços premium.</p>
+        </div>
+
+        <div style="padding: 32px; background: #FFFFFF; border: 1px solid var(--border-dark); border-radius: var(--radius-md);">
+          <div style="font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--blue-tech); margin-bottom: 16px;">03</div>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Automação em &lt; 20s</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #555968;">Cluster de agentes autônomos recebendo, qualificando e agendando no WhatsApp instantaneamente.</p>
+        </div>
+
+        <div style="padding: 32px; background: #FFFFFF; border: 1px solid var(--border-dark); border-radius: var(--radius-md);">
+          <div style="font-family: var(--font-mono); font-size: 28px; font-weight: 700; color: var(--blue-tech); margin-bottom: 16px;">04</div>
+          <h3 style="font-size: 20px; font-weight: 600; margin-bottom: 12px; color: var(--text-dark);">Aprendizado Contínuo</h3>
+          <p style="font-size: 14px; line-height: 1.6; color: #555968;">Cada atendimento alimenta a inteligência comercial para prever objeções e refinar os fechamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section How We Work (Dark Obsidian #0D0E13 Match) -->
+    <section style="padding: var(--section-pad-desktop) var(--gutter-desktop); background: var(--bg-card);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+        <div>
+          <div class="mono-tag" style="margin-bottom: 16px;">COMO OPERAMOS</div>
+          <h2 style="font-size: var(--text-h2); line-height: 1.05; margin-bottom: 30px;">
+            A inteligência estratégica humana direciona. A automação executa sem atrito.
+          </h2>
+          <p style="font-size: 17px; line-height: 1.6; color: var(--text-muted); margin-bottom: 24px;">
+            Não acreditamos em chatbots robóticos que afastam clientes com mensagens mecânicas. Nossos sistemas combinam processamento de linguagem natural refinado e estratégias comerciais de alto nível formuladas por especialistas humanos.
+          </p>
+          <div class="tech-badge">
+            <span class="dot"></span>
+            <span>Diretoria Técnica Ativa em Cada Projeto</span>
+          </div>
+        </div>
+
+        <div style="position: relative; height: 580px; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle);">
+          <img src="assets/vide_androide_telemetria.jpg" alt="Telemetria e Inteligência Comercial VIDE" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Credenciais & Valores -->
+    <section style="padding: 140px var(--gutter-desktop); background: var(--bg-void); text-align: center;">
+      <div class="mono-tag" style="margin-bottom: 20px;">VALORES INEGOCIÁVEIS</div>
+      <h2 style="font-size: clamp(32px, 5vw, 68px); line-height: 1.08; max-width: 900px; margin: 0 auto 40px; color: #FFFFFF;">
+        Padrão intransigente de excelência em cada linha de código, design e mensagem enviada.
+      </h2>
+      <a href="contact.html" class="btn-vide btn-cyan" data-cursor="LIFT-OFF">
+        <span>Conhecer a Equipe & Agendar Reunião</span>
+        <span class="btn-arrow">↗</span>
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="brand-wrapper" style="margin-bottom: 20px;">
+          <span class="brand-title" style="font-size: 24px;">VIDE<span class="brand-dot">.</span></span>
+        </div>
+        <p style="font-size: 15px; color: var(--text-muted); line-height: 1.6;">
+          Engenharia de precisão para operações comerciais e escala digital.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="studio.html">Studio</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Diretoria</h4>
+        <ul>
+          <li><span style="color: #FFFFFF;">Douglas</span> — Diretor Executivo</li>
+          <li><a href="mailto:contato@vide.com.br">contato@vide.com.br</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Ação Imediata</h4>
+        <a href="contact.html" class="btn-vide btn-cyan" style="width: 100%;">Falar Agora ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom-bar">
+      <span>© 2026 VIDE. Todos os direitos reservados.</span>
+      <span class="mono-tag">EXOAPE HIGH-FIDELITY BUILD</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
